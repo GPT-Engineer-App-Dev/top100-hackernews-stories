@@ -1,24 +1,7 @@
-import { CircleUser, Menu, Package2, Search } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { Checkbox } from "@/components/ui/checkbox"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
+import { CircleUser, Menu, Package2, Search } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Outlet } from "react-router-dom";
 
@@ -32,7 +15,7 @@ function SharedLayout() {
             className="flex items-center gap-2 text-lg font-semibold md:text-base"
           >
             <Package2 className="h-6 w-6" />
-            <span className="sr-only">Acme Inc</span>
+            <span className="sr-only">Hacker News Top Stories</span>
           </a>
           <a
             href="#"
@@ -59,7 +42,7 @@ function SharedLayout() {
                 className="flex items-center gap-2 text-lg font-semibold"
               >
                 <Package2 className="h-6 w-6" />
-                <span className="sr-only">Acme Inc</span>
+                <span className="sr-only">Hacker News Top Stories</span>
               </a>
               <a
                 href="#"
@@ -89,7 +72,7 @@ function SharedLayout() {
           </DropdownMenu>
         </div>
       </header>
-      <main className="flex flex-1">
+      <main className="flex flex-1 justify-center items-center">
         <Outlet />
       </main>
     </div>
